@@ -1,1 +1,70 @@
+public class Work_1 {
+	String name;
+	String last;
+	double sal,hra,da,ta,ma,pf,gs,ns,tax;
+	public void setda(double sal) {
+		da = sal*0.15;
+	}
+	public void getda() {
+		System.out.println(da);
+	}
+	public void setHra(double sal) {
+		hra = sal*0.5;
+	}
+	public void getHra() {
+		System.out.println(hra);
+	}
+	public void setTa(double sal) {
+		ta = sal*0.3;
+	}
+	public void getTa() {
+		System.out.println(ta);
+	}
+	public void setPf(double sal) {
+		pf = sal*0.05;
+	}
+	public void getPf() {
+		System.out.println(pf);
+	}
+	public void setGs() {
+		gs = sal+hra+da+ta+ma;
+	}
+	public void getGs() {
+		System.out.println(gs);
+	}
+	public void setNs() {
+		ns = gs - pf- tax;
+	}
+	public void getNs() {
+		System.out.println(ns);
+	}
+	public void setTax(double sal) {
+		tax  = sal*0.01;
+	}
+	public void getTax() {
+		System.out.println(tax);
+	}
+	
+	public static void main(String ...args)
+	{
+		Work_1 sal = new Work_1();
+		sal.setda(1000);
+		sal.getda();
+		sal.setHra(1000);
+		sal.getHra();
+		sal.setTa(1000);
+		sal.getTa();
+	//	sal.setMa(1000);
+	//	sal.getMa();
+		sal.setPf(1000);
+		sal.getPf();
+		sal.setGs();
+		sal.getGs();
+		sal.setTax(1000);
+		sal.getTax();
+		sal.setNs();
+		sal.getNs();
+	}
+	
+}
 
